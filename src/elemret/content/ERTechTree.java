@@ -9,15 +9,42 @@ import static mindustry.content.Items.*;
 import static mindustry.content.SectorPresets.*;
 import static mindustry.content.TechTree.*;
 import static mindustry.content.UnitTypes.*;
+import static elemret.content.ERBlocks.*;
+import static elemret.content.ERItems.*;
+import static elemret.content.ERSectors.*;
+import static elemret.content.ERUnits.*;
 
 public class ERTechTree {
     public static void load() {
-        Planets.serpulo.techTree = nodeRoot("element", coreShard, () -> {
+        nodeRoot("element", crystalConstructor, () -> {
 
-
-            node(conveyor, () -> {
+            node(electroCondenser, () -> {
 
             });
+            nodeProduce(emptyCrystal, () -> {
+                nodeProduce(electroCrystal, () -> {
+
+                });
+                nodeProduce(toxicCrystal, () -> {
+
+                });
+                nodeProduce(elementCrystal, () -> {
+
+                });
+                nodeProduce(windCrystal, () -> {
+
+                });
+                nodeProduce(flameCrystal, () -> {
+
+                });
+                nodeProduce(waterCrystal, () -> {
+
+                });
+                nodeProduce(iceCrystal, () -> {
+
+                });
+            });
+
         });
     }
 }

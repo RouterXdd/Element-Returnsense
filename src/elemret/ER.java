@@ -15,6 +15,7 @@ public class ER extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example content.");
+        ERStatus.load();
         ERItems.load();
         ERLiquids.load();
         ERUnits.load();
